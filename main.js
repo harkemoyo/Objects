@@ -20,12 +20,13 @@ function coolPhoto(name, age) {
 name,
 age,
 color() {
-    console.log( `This is ${this.name} favourite color`);
+    console.log( `This is ${this.name} favourite color She is ${age}`);
 }
 };
 };
 const obj1 = coolPhoto('Sifa', 29);
-console.log(obj1);
+obj1.color()
+
 
 // Create a constructor function
 class Person {
@@ -39,5 +40,15 @@ class Person {
   let john = new Person('john', 25);
   let jane = new Person('jane', 30);
   
-  console.log(john);
-  console.log(jane);
+//   recursion
+function factorial(n) {
+    // Base case
+    if (n === 1) {
+      return 1;
+    }
+    // Recursive case
+    else {
+      return n * factorial(n - 1);
+    }
+  }
+console.log(factorial(4))
