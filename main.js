@@ -11,6 +11,7 @@ const sum = {
     }
 
 }
+
 sum.sumAge()
 
 // factory fnc
@@ -52,3 +53,35 @@ function factorial(n) {
     }
   }
 console.log(factorial(4))
+
+// arrow func
+
+// class Debate {
+//   constructor (name){
+//     this.name = name
+//   }
+//   arrowFunction() {
+//     setTimeout(() => {
+// console.log('arrow :'+ this.name);
+//     }, 1000);
+//   }
+//   normalFunction() {
+//     setTimeout( function() {
+// console.log('arrow :'+ this.name);
+//     }, 1000);
+//   }
+// }
+// let mark =  new Debate('sofia');
+// Debate.arrowFunction()
+// Debate.normalFunction()
+// console.log(this.name)
+
+
+
+const person = {
+  name: 'John',
+  age: 30,
+  gender: 'male'
+};
+const gender = person.gender
+console.log(gender);
