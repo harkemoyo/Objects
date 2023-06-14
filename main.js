@@ -83,5 +83,28 @@ const person = {
   age: 30,
   gender: 'male'
 };
+console.log(person.age)
 const gender = person.gender
 console.log(gender);
+
+
+const cup = {
+  length: 10,
+  width: 5,
+  height:  10,
+  volume: function (){
+    return this.length*this.width*this.height
+  }
+
+}
+console.log(cup.volume());
+
+const mark = {
+   name: 'Hark',
+   age : 56,
+   country: "Norway",
+   logData: function (){
+    return `${this.name} is ${this.age} years old and lives in ${this.country}`
+   }
+}
+console.log(mark.logData())
