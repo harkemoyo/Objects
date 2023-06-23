@@ -109,3 +109,24 @@ const mark = {
 }
 console.log(mark.logData())
 console.log(Object.values(mark))
+
+
+//for loop in objects
+
+// array methods can't work in objects
+// this works
+let arr = [24, 33, 77];
+arr.forEach((val) => console.log(val)); 
+
+for (val of arr) {
+  console.log(val); 
+}
+
+
+// can'nt work
+let obj = { age: 12, name: "John Doe" };
+obj.forEach((val) => console.log(val)); 
+
+for (val of obj) {
+  console.log(val);
+}
