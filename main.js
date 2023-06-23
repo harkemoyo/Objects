@@ -108,3 +108,4 @@ const mark = {
    }
 }
 console.log(mark.logData())
+console.log(Object.values(mark))
